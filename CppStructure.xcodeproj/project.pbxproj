@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		AD72DB42187F930C00F5BF25 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB41187F930C00F5BF25 /* main.cpp */; };
 		AD72DB44187F930C00F5BF25 /* CppStructure.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = AD72DB43187F930C00F5BF25 /* CppStructure.1 */; };
-		AD72DC07187F94AB00F5BF25 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB7A187F94AA00F5BF25 /* json_reader.cpp */; };
-		AD72DC08187F94AB00F5BF25 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB7B187F94AA00F5BF25 /* json_value.cpp */; };
-		AD72DC09187F94AB00F5BF25 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD72DB7D187F94AA00F5BF25 /* json_writer.cpp */; };
+		ADB064BE187FA5E4001D77B5 /* json_reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB06431187FA5E4001D77B5 /* json_reader.cpp */; };
+		ADB064BF187FA5E4001D77B5 /* json_value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB06432187FA5E4001D77B5 /* json_value.cpp */; };
+		ADB064C0187FA5E4001D77B5 /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADB06434187FA5E4001D77B5 /* json_writer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,173 +31,47 @@
 		AD72DB3E187F930C00F5BF25 /* CppStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD72DB41187F930C00F5BF25 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AD72DB43187F930C00F5BF25 /* CppStructure.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CppStructure.1; sourceTree = "<group>"; };
-		AD72DB4B187F94AA00F5BF25 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
-		AD72DB4D187F94AA00F5BF25 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
-		AD72DB4E187F94AA00F5BF25 /* antglob.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = antglob.py; sourceTree = "<group>"; };
-		AD72DB4F187F94AA00F5BF25 /* fixeol.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fixeol.py; sourceTree = "<group>"; };
-		AD72DB50187F94AA00F5BF25 /* tarball.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tarball.py; sourceTree = "<group>"; };
-		AD72DB52187F94AA00F5BF25 /* doxyfile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxyfile.in; sourceTree = "<group>"; };
-		AD72DB53187F94AA00F5BF25 /* footer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = footer.html; sourceTree = "<group>"; };
-		AD72DB54187F94AA00F5BF25 /* header.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = header.html; sourceTree = "<group>"; };
-		AD72DB55187F94AA00F5BF25 /* jsoncpp.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsoncpp.dox; sourceTree = "<group>"; };
-		AD72DB56187F94AA00F5BF25 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		AD72DB57187F94AA00F5BF25 /* roadmap.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = roadmap.dox; sourceTree = "<group>"; };
-		AD72DB58187F94AA00F5BF25 /* doxybuild.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = doxybuild.py; sourceTree = "<group>"; };
-		AD72DB5B187F94AA00F5BF25 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
-		AD72DB5C187F94AA00F5BF25 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		AD72DB5D187F94AA00F5BF25 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
-		AD72DB5E187F94AA00F5BF25 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
-		AD72DB5F187F94AA00F5BF25 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
-		AD72DB60187F94AA00F5BF25 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
-		AD72DB61187F94AA00F5BF25 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
-		AD72DB62187F94AA00F5BF25 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
-		AD72DB63187F94AA00F5BF25 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		AD72DB66187F94AA00F5BF25 /* jsoncpp.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsoncpp.sln; sourceTree = "<group>"; };
-		AD72DB67187F94AA00F5BF25 /* jsontest.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jsontest.vcproj; sourceTree = "<group>"; };
-		AD72DB68187F94AA00F5BF25 /* lib_json.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lib_json.vcproj; sourceTree = "<group>"; };
-		AD72DB69187F94AA00F5BF25 /* test_lib_json.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_lib_json.vcproj; sourceTree = "<group>"; };
-		AD72DB6A187F94AA00F5BF25 /* makerelease.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = makerelease.py; sourceTree = "<group>"; };
-		AD72DB6B187F94AA00F5BF25 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		AD72DB6D187F94AA00F5BF25 /* globtool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = globtool.py; sourceTree = "<group>"; };
-		AD72DB6E187F94AA00F5BF25 /* srcdist.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = srcdist.py; sourceTree = "<group>"; };
-		AD72DB6F187F94AA00F5BF25 /* substinfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = substinfile.py; sourceTree = "<group>"; };
-		AD72DB70187F94AA00F5BF25 /* targz.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = targz.py; sourceTree = "<group>"; };
-		AD72DB71187F94AA00F5BF25 /* SConstruct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConstruct; sourceTree = "<group>"; };
-		AD72DB77187F94AA00F5BF25 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
-		AD72DB78187F94AA00F5BF25 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
-		AD72DB79187F94AA00F5BF25 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
-		AD72DB7A187F94AA00F5BF25 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
-		AD72DB7B187F94AA00F5BF25 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
-		AD72DB7C187F94AA00F5BF25 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
-		AD72DB7D187F94AA00F5BF25 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
-		AD72DB7E187F94AA00F5BF25 /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
-		AD72DB85187F94AA00F5BF25 /* cleantests.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cleantests.py; sourceTree = "<group>"; };
-		AD72DB87187F94AA00F5BF25 /* test_array_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_01.expected; sourceTree = "<group>"; };
-		AD72DB88187F94AA00F5BF25 /* test_array_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_01.json; sourceTree = "<group>"; };
-		AD72DB89187F94AA00F5BF25 /* test_array_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_02.expected; sourceTree = "<group>"; };
-		AD72DB8A187F94AA00F5BF25 /* test_array_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_02.json; sourceTree = "<group>"; };
-		AD72DB8B187F94AA00F5BF25 /* test_array_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_03.expected; sourceTree = "<group>"; };
-		AD72DB8C187F94AA00F5BF25 /* test_array_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_03.json; sourceTree = "<group>"; };
-		AD72DB8D187F94AA00F5BF25 /* test_array_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_04.expected; sourceTree = "<group>"; };
-		AD72DB8E187F94AA00F5BF25 /* test_array_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_04.json; sourceTree = "<group>"; };
-		AD72DB8F187F94AA00F5BF25 /* test_array_05.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_05.expected; sourceTree = "<group>"; };
-		AD72DB90187F94AA00F5BF25 /* test_array_05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_05.json; sourceTree = "<group>"; };
-		AD72DB91187F94AA00F5BF25 /* test_array_06.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_array_06.expected; sourceTree = "<group>"; };
-		AD72DB92187F94AA00F5BF25 /* test_array_06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_array_06.json; sourceTree = "<group>"; };
-		AD72DB93187F94AA00F5BF25 /* test_basic_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_01.expected; sourceTree = "<group>"; };
-		AD72DB94187F94AA00F5BF25 /* test_basic_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_01.json; sourceTree = "<group>"; };
-		AD72DB95187F94AA00F5BF25 /* test_basic_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_02.expected; sourceTree = "<group>"; };
-		AD72DB96187F94AA00F5BF25 /* test_basic_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_02.json; sourceTree = "<group>"; };
-		AD72DB97187F94AA00F5BF25 /* test_basic_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_03.expected; sourceTree = "<group>"; };
-		AD72DB98187F94AA00F5BF25 /* test_basic_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_03.json; sourceTree = "<group>"; };
-		AD72DB99187F94AA00F5BF25 /* test_basic_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_04.expected; sourceTree = "<group>"; };
-		AD72DB9A187F94AA00F5BF25 /* test_basic_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_04.json; sourceTree = "<group>"; };
-		AD72DB9B187F94AA00F5BF25 /* test_basic_05.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_05.expected; sourceTree = "<group>"; };
-		AD72DB9C187F94AA00F5BF25 /* test_basic_05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_05.json; sourceTree = "<group>"; };
-		AD72DB9D187F94AA00F5BF25 /* test_basic_06.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_06.expected; sourceTree = "<group>"; };
-		AD72DB9E187F94AA00F5BF25 /* test_basic_06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_06.json; sourceTree = "<group>"; };
-		AD72DB9F187F94AA00F5BF25 /* test_basic_07.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_07.expected; sourceTree = "<group>"; };
-		AD72DBA0187F94AA00F5BF25 /* test_basic_07.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_07.json; sourceTree = "<group>"; };
-		AD72DBA1187F94AA00F5BF25 /* test_basic_08.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_08.expected; sourceTree = "<group>"; };
-		AD72DBA2187F94AA00F5BF25 /* test_basic_08.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_08.json; sourceTree = "<group>"; };
-		AD72DBA3187F94AA00F5BF25 /* test_basic_09.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_basic_09.expected; sourceTree = "<group>"; };
-		AD72DBA4187F94AA00F5BF25 /* test_basic_09.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_basic_09.json; sourceTree = "<group>"; };
-		AD72DBA5187F94AA00F5BF25 /* test_comment_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_comment_01.expected; sourceTree = "<group>"; };
-		AD72DBA6187F94AA00F5BF25 /* test_comment_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_comment_01.json; sourceTree = "<group>"; };
-		AD72DBA7187F94AA00F5BF25 /* test_complex_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_complex_01.expected; sourceTree = "<group>"; };
-		AD72DBA8187F94AA00F5BF25 /* test_complex_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_complex_01.json; sourceTree = "<group>"; };
-		AD72DBA9187F94AA00F5BF25 /* test_integer_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_integer_01.expected; sourceTree = "<group>"; };
-		AD72DBAA187F94AA00F5BF25 /* test_integer_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_integer_01.json; sourceTree = "<group>"; };
-		AD72DBAB187F94AA00F5BF25 /* test_integer_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_integer_02.expected; sourceTree = "<group>"; };
-		AD72DBAC187F94AA00F5BF25 /* test_integer_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_integer_02.json; sourceTree = "<group>"; };
-		AD72DBAD187F94AA00F5BF25 /* test_integer_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_integer_03.expected; sourceTree = "<group>"; };
-		AD72DBAE187F94AA00F5BF25 /* test_integer_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_integer_03.json; sourceTree = "<group>"; };
-		AD72DBAF187F94AA00F5BF25 /* test_integer_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_integer_04.expected; sourceTree = "<group>"; };
-		AD72DBB0187F94AA00F5BF25 /* test_integer_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_integer_04.json; sourceTree = "<group>"; };
-		AD72DBB1187F94AA00F5BF25 /* test_integer_05.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_integer_05.expected; sourceTree = "<group>"; };
-		AD72DBB2187F94AA00F5BF25 /* test_integer_05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_integer_05.json; sourceTree = "<group>"; };
-		AD72DBB3187F94AA00F5BF25 /* test_large_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_large_01.expected; sourceTree = "<group>"; };
-		AD72DBB4187F94AA00F5BF25 /* test_large_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_large_01.json; sourceTree = "<group>"; };
-		AD72DBB5187F94AA00F5BF25 /* test_object_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_object_01.expected; sourceTree = "<group>"; };
-		AD72DBB6187F94AA00F5BF25 /* test_object_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_object_01.json; sourceTree = "<group>"; };
-		AD72DBB7187F94AA00F5BF25 /* test_object_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_object_02.expected; sourceTree = "<group>"; };
-		AD72DBB8187F94AA00F5BF25 /* test_object_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_object_02.json; sourceTree = "<group>"; };
-		AD72DBB9187F94AA00F5BF25 /* test_object_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_object_03.expected; sourceTree = "<group>"; };
-		AD72DBBA187F94AA00F5BF25 /* test_object_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_object_03.json; sourceTree = "<group>"; };
-		AD72DBBB187F94AA00F5BF25 /* test_object_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_object_04.expected; sourceTree = "<group>"; };
-		AD72DBBC187F94AA00F5BF25 /* test_object_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_object_04.json; sourceTree = "<group>"; };
-		AD72DBBD187F94AA00F5BF25 /* test_preserve_comment_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_preserve_comment_01.expected; sourceTree = "<group>"; };
-		AD72DBBE187F94AA00F5BF25 /* test_preserve_comment_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_preserve_comment_01.json; sourceTree = "<group>"; };
-		AD72DBBF187F94AA00F5BF25 /* test_real_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_01.expected; sourceTree = "<group>"; };
-		AD72DBC0187F94AA00F5BF25 /* test_real_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_01.json; sourceTree = "<group>"; };
-		AD72DBC1187F94AA00F5BF25 /* test_real_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_02.expected; sourceTree = "<group>"; };
-		AD72DBC2187F94AA00F5BF25 /* test_real_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_02.json; sourceTree = "<group>"; };
-		AD72DBC3187F94AA00F5BF25 /* test_real_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_03.expected; sourceTree = "<group>"; };
-		AD72DBC4187F94AA00F5BF25 /* test_real_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_03.json; sourceTree = "<group>"; };
-		AD72DBC5187F94AA00F5BF25 /* test_real_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_04.expected; sourceTree = "<group>"; };
-		AD72DBC6187F94AA00F5BF25 /* test_real_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_04.json; sourceTree = "<group>"; };
-		AD72DBC7187F94AA00F5BF25 /* test_real_05.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_05.expected; sourceTree = "<group>"; };
-		AD72DBC8187F94AA00F5BF25 /* test_real_05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_05.json; sourceTree = "<group>"; };
-		AD72DBC9187F94AA00F5BF25 /* test_real_06.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_06.expected; sourceTree = "<group>"; };
-		AD72DBCA187F94AA00F5BF25 /* test_real_06.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_06.json; sourceTree = "<group>"; };
-		AD72DBCB187F94AA00F5BF25 /* test_real_07.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_real_07.expected; sourceTree = "<group>"; };
-		AD72DBCC187F94AA00F5BF25 /* test_real_07.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_real_07.json; sourceTree = "<group>"; };
-		AD72DBCD187F94AA00F5BF25 /* test_string_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_01.expected; sourceTree = "<group>"; };
-		AD72DBCE187F94AA00F5BF25 /* test_string_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_01.json; sourceTree = "<group>"; };
-		AD72DBCF187F94AA00F5BF25 /* test_string_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_02.expected; sourceTree = "<group>"; };
-		AD72DBD0187F94AA00F5BF25 /* test_string_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_02.json; sourceTree = "<group>"; };
-		AD72DBD1187F94AA00F5BF25 /* test_string_unicode_01.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_unicode_01.expected; sourceTree = "<group>"; };
-		AD72DBD2187F94AA00F5BF25 /* test_string_unicode_01.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_unicode_01.json; sourceTree = "<group>"; };
-		AD72DBD3187F94AA00F5BF25 /* test_string_unicode_02.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_unicode_02.expected; sourceTree = "<group>"; };
-		AD72DBD4187F94AA00F5BF25 /* test_string_unicode_02.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_unicode_02.json; sourceTree = "<group>"; };
-		AD72DBD5187F94AA00F5BF25 /* test_string_unicode_03.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_unicode_03.expected; sourceTree = "<group>"; };
-		AD72DBD6187F94AA00F5BF25 /* test_string_unicode_03.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_unicode_03.json; sourceTree = "<group>"; };
-		AD72DBD7187F94AA00F5BF25 /* test_string_unicode_04.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_unicode_04.expected; sourceTree = "<group>"; };
-		AD72DBD8187F94AA00F5BF25 /* test_string_unicode_04.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_unicode_04.json; sourceTree = "<group>"; };
-		AD72DBD9187F94AB00F5BF25 /* test_string_unicode_05.expected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_string_unicode_05.expected; sourceTree = "<group>"; };
-		AD72DBDA187F94AB00F5BF25 /* test_string_unicode_05.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test_string_unicode_05.json; sourceTree = "<group>"; };
-		AD72DBDB187F94AB00F5BF25 /* generate_expected.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = generate_expected.py; sourceTree = "<group>"; };
-		AD72DBDD187F94AB00F5BF25 /* fail1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail1.json; sourceTree = "<group>"; };
-		AD72DBDE187F94AB00F5BF25 /* fail10.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail10.json; sourceTree = "<group>"; };
-		AD72DBDF187F94AB00F5BF25 /* fail11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail11.json; sourceTree = "<group>"; };
-		AD72DBE0187F94AB00F5BF25 /* fail12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail12.json; sourceTree = "<group>"; };
-		AD72DBE1187F94AB00F5BF25 /* fail13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail13.json; sourceTree = "<group>"; };
-		AD72DBE2187F94AB00F5BF25 /* fail14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail14.json; sourceTree = "<group>"; };
-		AD72DBE3187F94AB00F5BF25 /* fail15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail15.json; sourceTree = "<group>"; };
-		AD72DBE4187F94AB00F5BF25 /* fail16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail16.json; sourceTree = "<group>"; };
-		AD72DBE5187F94AB00F5BF25 /* fail17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail17.json; sourceTree = "<group>"; };
-		AD72DBE6187F94AB00F5BF25 /* fail18.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail18.json; sourceTree = "<group>"; };
-		AD72DBE7187F94AB00F5BF25 /* fail19.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail19.json; sourceTree = "<group>"; };
-		AD72DBE8187F94AB00F5BF25 /* fail2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail2.json; sourceTree = "<group>"; };
-		AD72DBE9187F94AB00F5BF25 /* fail20.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail20.json; sourceTree = "<group>"; };
-		AD72DBEA187F94AB00F5BF25 /* fail21.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail21.json; sourceTree = "<group>"; };
-		AD72DBEB187F94AB00F5BF25 /* fail22.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail22.json; sourceTree = "<group>"; };
-		AD72DBEC187F94AB00F5BF25 /* fail23.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail23.json; sourceTree = "<group>"; };
-		AD72DBED187F94AB00F5BF25 /* fail24.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail24.json; sourceTree = "<group>"; };
-		AD72DBEE187F94AB00F5BF25 /* fail25.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail25.json; sourceTree = "<group>"; };
-		AD72DBEF187F94AB00F5BF25 /* fail26.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail26.json; sourceTree = "<group>"; };
-		AD72DBF0187F94AB00F5BF25 /* fail27.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail27.json; sourceTree = "<group>"; };
-		AD72DBF1187F94AB00F5BF25 /* fail28.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail28.json; sourceTree = "<group>"; };
-		AD72DBF2187F94AB00F5BF25 /* fail29.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail29.json; sourceTree = "<group>"; };
-		AD72DBF3187F94AB00F5BF25 /* fail3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail3.json; sourceTree = "<group>"; };
-		AD72DBF4187F94AB00F5BF25 /* fail30.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail30.json; sourceTree = "<group>"; };
-		AD72DBF5187F94AB00F5BF25 /* fail31.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail31.json; sourceTree = "<group>"; };
-		AD72DBF6187F94AB00F5BF25 /* fail32.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail32.json; sourceTree = "<group>"; };
-		AD72DBF7187F94AB00F5BF25 /* fail33.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail33.json; sourceTree = "<group>"; };
-		AD72DBF8187F94AB00F5BF25 /* fail4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail4.json; sourceTree = "<group>"; };
-		AD72DBF9187F94AB00F5BF25 /* fail5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail5.json; sourceTree = "<group>"; };
-		AD72DBFA187F94AB00F5BF25 /* fail6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail6.json; sourceTree = "<group>"; };
-		AD72DBFB187F94AB00F5BF25 /* fail7.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail7.json; sourceTree = "<group>"; };
-		AD72DBFC187F94AB00F5BF25 /* fail8.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail8.json; sourceTree = "<group>"; };
-		AD72DBFD187F94AB00F5BF25 /* fail9.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fail9.json; sourceTree = "<group>"; };
-		AD72DBFE187F94AB00F5BF25 /* pass1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pass1.json; sourceTree = "<group>"; };
-		AD72DBFF187F94AB00F5BF25 /* pass2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pass2.json; sourceTree = "<group>"; };
-		AD72DC00187F94AB00F5BF25 /* pass3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pass3.json; sourceTree = "<group>"; };
-		AD72DC01187F94AB00F5BF25 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
-		AD72DC02187F94AB00F5BF25 /* pyjsontestrunner.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pyjsontestrunner.py; sourceTree = "<group>"; };
-		AD72DC03187F94AB00F5BF25 /* runjsontests.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = runjsontests.py; sourceTree = "<group>"; };
-		AD72DC04187F94AB00F5BF25 /* rununittests.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rununittests.py; sourceTree = "<group>"; };
-		AD72DC05187F94AB00F5BF25 /* version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		ADB06402187FA5E4001D77B5 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		ADB06404187FA5E4001D77B5 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		ADB06405187FA5E4001D77B5 /* antglob.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = antglob.py; sourceTree = "<group>"; };
+		ADB06406187FA5E4001D77B5 /* fixeol.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fixeol.py; sourceTree = "<group>"; };
+		ADB06407187FA5E4001D77B5 /* tarball.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = tarball.py; sourceTree = "<group>"; };
+		ADB06409187FA5E4001D77B5 /* doxyfile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxyfile.in; sourceTree = "<group>"; };
+		ADB0640A187FA5E4001D77B5 /* footer.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = footer.html; sourceTree = "<group>"; };
+		ADB0640B187FA5E4001D77B5 /* header.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = header.html; sourceTree = "<group>"; };
+		ADB0640C187FA5E4001D77B5 /* jsoncpp.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsoncpp.dox; sourceTree = "<group>"; };
+		ADB0640D187FA5E4001D77B5 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		ADB0640E187FA5E4001D77B5 /* roadmap.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = roadmap.dox; sourceTree = "<group>"; };
+		ADB0640F187FA5E4001D77B5 /* doxybuild.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = doxybuild.py; sourceTree = "<group>"; };
+		ADB06412187FA5E4001D77B5 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		ADB06413187FA5E4001D77B5 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		ADB06414187FA5E4001D77B5 /* features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		ADB06415187FA5E4001D77B5 /* forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		ADB06416187FA5E4001D77B5 /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		ADB06417187FA5E4001D77B5 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		ADB06418187FA5E4001D77B5 /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		ADB06419187FA5E4001D77B5 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		ADB0641A187FA5E4001D77B5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		ADB0641D187FA5E4001D77B5 /* jsoncpp.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jsoncpp.sln; sourceTree = "<group>"; };
+		ADB0641E187FA5E4001D77B5 /* jsontest.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = jsontest.vcproj; sourceTree = "<group>"; };
+		ADB0641F187FA5E4001D77B5 /* lib_json.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lib_json.vcproj; sourceTree = "<group>"; };
+		ADB06420187FA5E4001D77B5 /* test_lib_json.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test_lib_json.vcproj; sourceTree = "<group>"; };
+		ADB06421187FA5E4001D77B5 /* makerelease.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = makerelease.py; sourceTree = "<group>"; };
+		ADB06422187FA5E4001D77B5 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		ADB06424187FA5E4001D77B5 /* globtool.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = globtool.py; sourceTree = "<group>"; };
+		ADB06425187FA5E4001D77B5 /* srcdist.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = srcdist.py; sourceTree = "<group>"; };
+		ADB06426187FA5E4001D77B5 /* substinfile.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = substinfile.py; sourceTree = "<group>"; };
+		ADB06427187FA5E4001D77B5 /* targz.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = targz.py; sourceTree = "<group>"; };
+		ADB06428187FA5E4001D77B5 /* SConstruct */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SConstruct; sourceTree = "<group>"; };
+		ADB0642E187FA5E4001D77B5 /* json_batchallocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json_batchallocator.h; sourceTree = "<group>"; };
+		ADB0642F187FA5E4001D77B5 /* json_internalarray.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalarray.inl; sourceTree = "<group>"; };
+		ADB06430187FA5E4001D77B5 /* json_internalmap.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_internalmap.inl; sourceTree = "<group>"; };
+		ADB06431187FA5E4001D77B5 /* json_reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_reader.cpp; sourceTree = "<group>"; };
+		ADB06432187FA5E4001D77B5 /* json_value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_value.cpp; sourceTree = "<group>"; };
+		ADB06433187FA5E4001D77B5 /* json_valueiterator.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json_valueiterator.inl; sourceTree = "<group>"; };
+		ADB06434187FA5E4001D77B5 /* json_writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = json_writer.cpp; sourceTree = "<group>"; };
+		ADB06435187FA5E4001D77B5 /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
+		ADB064BC187FA5E4001D77B5 /* version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,282 +104,131 @@
 		AD72DB40187F930C00F5BF25 /* CppStructure */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB4A187F94AA00F5BF25 /* JsonCpp */,
+				ADB06401187FA5E4001D77B5 /* jsoncpp */,
 				AD72DB41187F930C00F5BF25 /* main.cpp */,
 				AD72DB43187F930C00F5BF25 /* CppStructure.1 */,
 			);
 			path = CppStructure;
 			sourceTree = "<group>";
 		};
-		AD72DB4A187F94AA00F5BF25 /* JsonCpp */ = {
+		ADB06401187FA5E4001D77B5 /* jsoncpp */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB4B187F94AA00F5BF25 /* AUTHORS */,
-				AD72DB4C187F94AA00F5BF25 /* devtools */,
-				AD72DB51187F94AA00F5BF25 /* doc */,
-				AD72DB58187F94AA00F5BF25 /* doxybuild.py */,
-				AD72DB59187F94AA00F5BF25 /* include */,
-				AD72DB63187F94AA00F5BF25 /* LICENSE */,
-				AD72DB64187F94AA00F5BF25 /* makefiles */,
-				AD72DB6A187F94AA00F5BF25 /* makerelease.py */,
-				AD72DB6B187F94AA00F5BF25 /* README.txt */,
-				AD72DB6C187F94AA00F5BF25 /* scons-tools */,
-				AD72DB71187F94AA00F5BF25 /* SConstruct */,
-				AD72DB72187F94AA00F5BF25 /* src */,
-				AD72DB84187F94AA00F5BF25 /* test */,
-				AD72DC05187F94AB00F5BF25 /* version */,
+				ADB06402187FA5E4001D77B5 /* AUTHORS */,
+				ADB06403187FA5E4001D77B5 /* devtools */,
+				ADB06408187FA5E4001D77B5 /* doc */,
+				ADB0640F187FA5E4001D77B5 /* doxybuild.py */,
+				ADB06410187FA5E4001D77B5 /* include */,
+				ADB0641A187FA5E4001D77B5 /* LICENSE */,
+				ADB0641B187FA5E4001D77B5 /* makefiles */,
+				ADB06421187FA5E4001D77B5 /* makerelease.py */,
+				ADB06422187FA5E4001D77B5 /* README.txt */,
+				ADB06423187FA5E4001D77B5 /* scons-tools */,
+				ADB06428187FA5E4001D77B5 /* SConstruct */,
+				ADB06429187FA5E4001D77B5 /* src */,
+				ADB064BC187FA5E4001D77B5 /* version */,
 			);
-			name = JsonCpp;
-			path = ../../JsonCpp;
-			sourceTree = "<group>";
+			path = jsoncpp;
+			sourceTree = SOURCE_ROOT;
 		};
-		AD72DB4C187F94AA00F5BF25 /* devtools */ = {
+		ADB06403187FA5E4001D77B5 /* devtools */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB4D187F94AA00F5BF25 /* __init__.py */,
-				AD72DB4E187F94AA00F5BF25 /* antglob.py */,
-				AD72DB4F187F94AA00F5BF25 /* fixeol.py */,
-				AD72DB50187F94AA00F5BF25 /* tarball.py */,
+				ADB06404187FA5E4001D77B5 /* __init__.py */,
+				ADB06405187FA5E4001D77B5 /* antglob.py */,
+				ADB06406187FA5E4001D77B5 /* fixeol.py */,
+				ADB06407187FA5E4001D77B5 /* tarball.py */,
 			);
 			path = devtools;
 			sourceTree = "<group>";
 		};
-		AD72DB51187F94AA00F5BF25 /* doc */ = {
+		ADB06408187FA5E4001D77B5 /* doc */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB52187F94AA00F5BF25 /* doxyfile.in */,
-				AD72DB53187F94AA00F5BF25 /* footer.html */,
-				AD72DB54187F94AA00F5BF25 /* header.html */,
-				AD72DB55187F94AA00F5BF25 /* jsoncpp.dox */,
-				AD72DB56187F94AA00F5BF25 /* readme.txt */,
-				AD72DB57187F94AA00F5BF25 /* roadmap.dox */,
+				ADB06409187FA5E4001D77B5 /* doxyfile.in */,
+				ADB0640A187FA5E4001D77B5 /* footer.html */,
+				ADB0640B187FA5E4001D77B5 /* header.html */,
+				ADB0640C187FA5E4001D77B5 /* jsoncpp.dox */,
+				ADB0640D187FA5E4001D77B5 /* readme.txt */,
+				ADB0640E187FA5E4001D77B5 /* roadmap.dox */,
 			);
 			path = doc;
 			sourceTree = "<group>";
 		};
-		AD72DB59187F94AA00F5BF25 /* include */ = {
+		ADB06410187FA5E4001D77B5 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB5A187F94AA00F5BF25 /* json */,
+				ADB06411187FA5E4001D77B5 /* json */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		AD72DB5A187F94AA00F5BF25 /* json */ = {
+		ADB06411187FA5E4001D77B5 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB5B187F94AA00F5BF25 /* autolink.h */,
-				AD72DB5C187F94AA00F5BF25 /* config.h */,
-				AD72DB5D187F94AA00F5BF25 /* features.h */,
-				AD72DB5E187F94AA00F5BF25 /* forwards.h */,
-				AD72DB5F187F94AA00F5BF25 /* json.h */,
-				AD72DB60187F94AA00F5BF25 /* reader.h */,
-				AD72DB61187F94AA00F5BF25 /* value.h */,
-				AD72DB62187F94AA00F5BF25 /* writer.h */,
+				ADB06412187FA5E4001D77B5 /* autolink.h */,
+				ADB06413187FA5E4001D77B5 /* config.h */,
+				ADB06414187FA5E4001D77B5 /* features.h */,
+				ADB06415187FA5E4001D77B5 /* forwards.h */,
+				ADB06416187FA5E4001D77B5 /* json.h */,
+				ADB06417187FA5E4001D77B5 /* reader.h */,
+				ADB06418187FA5E4001D77B5 /* value.h */,
+				ADB06419187FA5E4001D77B5 /* writer.h */,
 			);
 			path = json;
 			sourceTree = "<group>";
 		};
-		AD72DB64187F94AA00F5BF25 /* makefiles */ = {
+		ADB0641B187FA5E4001D77B5 /* makefiles */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB65187F94AA00F5BF25 /* vs71 */,
+				ADB0641C187FA5E4001D77B5 /* vs71 */,
 			);
 			path = makefiles;
 			sourceTree = "<group>";
 		};
-		AD72DB65187F94AA00F5BF25 /* vs71 */ = {
+		ADB0641C187FA5E4001D77B5 /* vs71 */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB66187F94AA00F5BF25 /* jsoncpp.sln */,
-				AD72DB67187F94AA00F5BF25 /* jsontest.vcproj */,
-				AD72DB68187F94AA00F5BF25 /* lib_json.vcproj */,
-				AD72DB69187F94AA00F5BF25 /* test_lib_json.vcproj */,
+				ADB0641D187FA5E4001D77B5 /* jsoncpp.sln */,
+				ADB0641E187FA5E4001D77B5 /* jsontest.vcproj */,
+				ADB0641F187FA5E4001D77B5 /* lib_json.vcproj */,
+				ADB06420187FA5E4001D77B5 /* test_lib_json.vcproj */,
 			);
 			path = vs71;
 			sourceTree = "<group>";
 		};
-		AD72DB6C187F94AA00F5BF25 /* scons-tools */ = {
+		ADB06423187FA5E4001D77B5 /* scons-tools */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB6D187F94AA00F5BF25 /* globtool.py */,
-				AD72DB6E187F94AA00F5BF25 /* srcdist.py */,
-				AD72DB6F187F94AA00F5BF25 /* substinfile.py */,
-				AD72DB70187F94AA00F5BF25 /* targz.py */,
+				ADB06424187FA5E4001D77B5 /* globtool.py */,
+				ADB06425187FA5E4001D77B5 /* srcdist.py */,
+				ADB06426187FA5E4001D77B5 /* substinfile.py */,
+				ADB06427187FA5E4001D77B5 /* targz.py */,
 			);
 			path = "scons-tools";
 			sourceTree = "<group>";
 		};
-		AD72DB72187F94AA00F5BF25 /* src */ = {
+		ADB06429187FA5E4001D77B5 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB76187F94AA00F5BF25 /* lib_json */,
+				ADB0642D187FA5E4001D77B5 /* lib_json */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		AD72DB76187F94AA00F5BF25 /* lib_json */ = {
+		ADB0642D187FA5E4001D77B5 /* lib_json */ = {
 			isa = PBXGroup;
 			children = (
-				AD72DB77187F94AA00F5BF25 /* json_batchallocator.h */,
-				AD72DB78187F94AA00F5BF25 /* json_internalarray.inl */,
-				AD72DB79187F94AA00F5BF25 /* json_internalmap.inl */,
-				AD72DB7A187F94AA00F5BF25 /* json_reader.cpp */,
-				AD72DB7B187F94AA00F5BF25 /* json_value.cpp */,
-				AD72DB7C187F94AA00F5BF25 /* json_valueiterator.inl */,
-				AD72DB7D187F94AA00F5BF25 /* json_writer.cpp */,
-				AD72DB7E187F94AA00F5BF25 /* sconscript */,
+				ADB0642E187FA5E4001D77B5 /* json_batchallocator.h */,
+				ADB0642F187FA5E4001D77B5 /* json_internalarray.inl */,
+				ADB06430187FA5E4001D77B5 /* json_internalmap.inl */,
+				ADB06431187FA5E4001D77B5 /* json_reader.cpp */,
+				ADB06432187FA5E4001D77B5 /* json_value.cpp */,
+				ADB06433187FA5E4001D77B5 /* json_valueiterator.inl */,
+				ADB06434187FA5E4001D77B5 /* json_writer.cpp */,
+				ADB06435187FA5E4001D77B5 /* sconscript */,
 			);
 			path = lib_json;
-			sourceTree = "<group>";
-		};
-		AD72DB84187F94AA00F5BF25 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				AD72DB85187F94AA00F5BF25 /* cleantests.py */,
-				AD72DB86187F94AA00F5BF25 /* data */,
-				AD72DBDB187F94AB00F5BF25 /* generate_expected.py */,
-				AD72DBDC187F94AB00F5BF25 /* jsonchecker */,
-				AD72DC02187F94AB00F5BF25 /* pyjsontestrunner.py */,
-				AD72DC03187F94AB00F5BF25 /* runjsontests.py */,
-				AD72DC04187F94AB00F5BF25 /* rununittests.py */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
-		AD72DB86187F94AA00F5BF25 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				AD72DB87187F94AA00F5BF25 /* test_array_01.expected */,
-				AD72DB88187F94AA00F5BF25 /* test_array_01.json */,
-				AD72DB89187F94AA00F5BF25 /* test_array_02.expected */,
-				AD72DB8A187F94AA00F5BF25 /* test_array_02.json */,
-				AD72DB8B187F94AA00F5BF25 /* test_array_03.expected */,
-				AD72DB8C187F94AA00F5BF25 /* test_array_03.json */,
-				AD72DB8D187F94AA00F5BF25 /* test_array_04.expected */,
-				AD72DB8E187F94AA00F5BF25 /* test_array_04.json */,
-				AD72DB8F187F94AA00F5BF25 /* test_array_05.expected */,
-				AD72DB90187F94AA00F5BF25 /* test_array_05.json */,
-				AD72DB91187F94AA00F5BF25 /* test_array_06.expected */,
-				AD72DB92187F94AA00F5BF25 /* test_array_06.json */,
-				AD72DB93187F94AA00F5BF25 /* test_basic_01.expected */,
-				AD72DB94187F94AA00F5BF25 /* test_basic_01.json */,
-				AD72DB95187F94AA00F5BF25 /* test_basic_02.expected */,
-				AD72DB96187F94AA00F5BF25 /* test_basic_02.json */,
-				AD72DB97187F94AA00F5BF25 /* test_basic_03.expected */,
-				AD72DB98187F94AA00F5BF25 /* test_basic_03.json */,
-				AD72DB99187F94AA00F5BF25 /* test_basic_04.expected */,
-				AD72DB9A187F94AA00F5BF25 /* test_basic_04.json */,
-				AD72DB9B187F94AA00F5BF25 /* test_basic_05.expected */,
-				AD72DB9C187F94AA00F5BF25 /* test_basic_05.json */,
-				AD72DB9D187F94AA00F5BF25 /* test_basic_06.expected */,
-				AD72DB9E187F94AA00F5BF25 /* test_basic_06.json */,
-				AD72DB9F187F94AA00F5BF25 /* test_basic_07.expected */,
-				AD72DBA0187F94AA00F5BF25 /* test_basic_07.json */,
-				AD72DBA1187F94AA00F5BF25 /* test_basic_08.expected */,
-				AD72DBA2187F94AA00F5BF25 /* test_basic_08.json */,
-				AD72DBA3187F94AA00F5BF25 /* test_basic_09.expected */,
-				AD72DBA4187F94AA00F5BF25 /* test_basic_09.json */,
-				AD72DBA5187F94AA00F5BF25 /* test_comment_01.expected */,
-				AD72DBA6187F94AA00F5BF25 /* test_comment_01.json */,
-				AD72DBA7187F94AA00F5BF25 /* test_complex_01.expected */,
-				AD72DBA8187F94AA00F5BF25 /* test_complex_01.json */,
-				AD72DBA9187F94AA00F5BF25 /* test_integer_01.expected */,
-				AD72DBAA187F94AA00F5BF25 /* test_integer_01.json */,
-				AD72DBAB187F94AA00F5BF25 /* test_integer_02.expected */,
-				AD72DBAC187F94AA00F5BF25 /* test_integer_02.json */,
-				AD72DBAD187F94AA00F5BF25 /* test_integer_03.expected */,
-				AD72DBAE187F94AA00F5BF25 /* test_integer_03.json */,
-				AD72DBAF187F94AA00F5BF25 /* test_integer_04.expected */,
-				AD72DBB0187F94AA00F5BF25 /* test_integer_04.json */,
-				AD72DBB1187F94AA00F5BF25 /* test_integer_05.expected */,
-				AD72DBB2187F94AA00F5BF25 /* test_integer_05.json */,
-				AD72DBB3187F94AA00F5BF25 /* test_large_01.expected */,
-				AD72DBB4187F94AA00F5BF25 /* test_large_01.json */,
-				AD72DBB5187F94AA00F5BF25 /* test_object_01.expected */,
-				AD72DBB6187F94AA00F5BF25 /* test_object_01.json */,
-				AD72DBB7187F94AA00F5BF25 /* test_object_02.expected */,
-				AD72DBB8187F94AA00F5BF25 /* test_object_02.json */,
-				AD72DBB9187F94AA00F5BF25 /* test_object_03.expected */,
-				AD72DBBA187F94AA00F5BF25 /* test_object_03.json */,
-				AD72DBBB187F94AA00F5BF25 /* test_object_04.expected */,
-				AD72DBBC187F94AA00F5BF25 /* test_object_04.json */,
-				AD72DBBD187F94AA00F5BF25 /* test_preserve_comment_01.expected */,
-				AD72DBBE187F94AA00F5BF25 /* test_preserve_comment_01.json */,
-				AD72DBBF187F94AA00F5BF25 /* test_real_01.expected */,
-				AD72DBC0187F94AA00F5BF25 /* test_real_01.json */,
-				AD72DBC1187F94AA00F5BF25 /* test_real_02.expected */,
-				AD72DBC2187F94AA00F5BF25 /* test_real_02.json */,
-				AD72DBC3187F94AA00F5BF25 /* test_real_03.expected */,
-				AD72DBC4187F94AA00F5BF25 /* test_real_03.json */,
-				AD72DBC5187F94AA00F5BF25 /* test_real_04.expected */,
-				AD72DBC6187F94AA00F5BF25 /* test_real_04.json */,
-				AD72DBC7187F94AA00F5BF25 /* test_real_05.expected */,
-				AD72DBC8187F94AA00F5BF25 /* test_real_05.json */,
-				AD72DBC9187F94AA00F5BF25 /* test_real_06.expected */,
-				AD72DBCA187F94AA00F5BF25 /* test_real_06.json */,
-				AD72DBCB187F94AA00F5BF25 /* test_real_07.expected */,
-				AD72DBCC187F94AA00F5BF25 /* test_real_07.json */,
-				AD72DBCD187F94AA00F5BF25 /* test_string_01.expected */,
-				AD72DBCE187F94AA00F5BF25 /* test_string_01.json */,
-				AD72DBCF187F94AA00F5BF25 /* test_string_02.expected */,
-				AD72DBD0187F94AA00F5BF25 /* test_string_02.json */,
-				AD72DBD1187F94AA00F5BF25 /* test_string_unicode_01.expected */,
-				AD72DBD2187F94AA00F5BF25 /* test_string_unicode_01.json */,
-				AD72DBD3187F94AA00F5BF25 /* test_string_unicode_02.expected */,
-				AD72DBD4187F94AA00F5BF25 /* test_string_unicode_02.json */,
-				AD72DBD5187F94AA00F5BF25 /* test_string_unicode_03.expected */,
-				AD72DBD6187F94AA00F5BF25 /* test_string_unicode_03.json */,
-				AD72DBD7187F94AA00F5BF25 /* test_string_unicode_04.expected */,
-				AD72DBD8187F94AA00F5BF25 /* test_string_unicode_04.json */,
-				AD72DBD9187F94AB00F5BF25 /* test_string_unicode_05.expected */,
-				AD72DBDA187F94AB00F5BF25 /* test_string_unicode_05.json */,
-			);
-			path = data;
-			sourceTree = "<group>";
-		};
-		AD72DBDC187F94AB00F5BF25 /* jsonchecker */ = {
-			isa = PBXGroup;
-			children = (
-				AD72DBDD187F94AB00F5BF25 /* fail1.json */,
-				AD72DBDE187F94AB00F5BF25 /* fail10.json */,
-				AD72DBDF187F94AB00F5BF25 /* fail11.json */,
-				AD72DBE0187F94AB00F5BF25 /* fail12.json */,
-				AD72DBE1187F94AB00F5BF25 /* fail13.json */,
-				AD72DBE2187F94AB00F5BF25 /* fail14.json */,
-				AD72DBE3187F94AB00F5BF25 /* fail15.json */,
-				AD72DBE4187F94AB00F5BF25 /* fail16.json */,
-				AD72DBE5187F94AB00F5BF25 /* fail17.json */,
-				AD72DBE6187F94AB00F5BF25 /* fail18.json */,
-				AD72DBE7187F94AB00F5BF25 /* fail19.json */,
-				AD72DBE8187F94AB00F5BF25 /* fail2.json */,
-				AD72DBE9187F94AB00F5BF25 /* fail20.json */,
-				AD72DBEA187F94AB00F5BF25 /* fail21.json */,
-				AD72DBEB187F94AB00F5BF25 /* fail22.json */,
-				AD72DBEC187F94AB00F5BF25 /* fail23.json */,
-				AD72DBED187F94AB00F5BF25 /* fail24.json */,
-				AD72DBEE187F94AB00F5BF25 /* fail25.json */,
-				AD72DBEF187F94AB00F5BF25 /* fail26.json */,
-				AD72DBF0187F94AB00F5BF25 /* fail27.json */,
-				AD72DBF1187F94AB00F5BF25 /* fail28.json */,
-				AD72DBF2187F94AB00F5BF25 /* fail29.json */,
-				AD72DBF3187F94AB00F5BF25 /* fail3.json */,
-				AD72DBF4187F94AB00F5BF25 /* fail30.json */,
-				AD72DBF5187F94AB00F5BF25 /* fail31.json */,
-				AD72DBF6187F94AB00F5BF25 /* fail32.json */,
-				AD72DBF7187F94AB00F5BF25 /* fail33.json */,
-				AD72DBF8187F94AB00F5BF25 /* fail4.json */,
-				AD72DBF9187F94AB00F5BF25 /* fail5.json */,
-				AD72DBFA187F94AB00F5BF25 /* fail6.json */,
-				AD72DBFB187F94AB00F5BF25 /* fail7.json */,
-				AD72DBFC187F94AB00F5BF25 /* fail8.json */,
-				AD72DBFD187F94AB00F5BF25 /* fail9.json */,
-				AD72DBFE187F94AB00F5BF25 /* pass1.json */,
-				AD72DBFF187F94AB00F5BF25 /* pass2.json */,
-				AD72DC00187F94AB00F5BF25 /* pass3.json */,
-				AD72DC01187F94AB00F5BF25 /* readme.txt */,
-			);
-			path = jsonchecker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,10 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD72DC08187F94AB00F5BF25 /* json_value.cpp in Sources */,
-				AD72DC07187F94AB00F5BF25 /* json_reader.cpp in Sources */,
+				ADB064BF187FA5E4001D77B5 /* json_value.cpp in Sources */,
+				ADB064BE187FA5E4001D77B5 /* json_reader.cpp in Sources */,
 				AD72DB42187F930C00F5BF25 /* main.cpp in Sources */,
-				AD72DC09187F94AB00F5BF25 /* json_writer.cpp in Sources */,
+				ADB064C0187FA5E4001D77B5 /* json_writer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +397,7 @@
 				AD72DB49187F930C00F5BF25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

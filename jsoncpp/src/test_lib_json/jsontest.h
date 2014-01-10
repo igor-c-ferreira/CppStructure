@@ -1,7 +1,7 @@
 #ifndef JSONTEST_H_INCLUDED
 # define JSONTEST_H_INCLUDED
 
-# include <json/config.h>
+# include "config.h"
 # include <stdio.h>
 # include <deque>
 # include <string>
