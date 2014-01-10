@@ -25,7 +25,9 @@ int main(int argc, const char * argv[])
     Value root;
     Reader reader;
     
-    const string document = "{\"encoding\":\"UTF-8\",\"plug-ins\":[\"python\",\"c++\",\"ruby\"],\"indent\":{\"length\":3,\"use_space\":true}}";
+    const string document = DownloadUrlAsString("https://dl.dropboxusercontent.com/u/16397611/example.json");
+    
+    cout << document;
     
     bool parsingSuccessful = reader.parse(document, root);
     
@@ -60,8 +62,6 @@ int main(int argc, const char * argv[])
     //cin >> root["subtree"];
     root["subtree"] = "subtree";
     cout << root << "\n";
-    
-    cout << DownloadUrlAsString("http://www.pogamadores.com");
     
     return 0;
 }
